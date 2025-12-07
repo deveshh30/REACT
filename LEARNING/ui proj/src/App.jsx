@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import page1 from './components/page1/page1'
+import Page1 from './components/page1/page1';
+import Page2 from './components/page2/page2';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-  <>
-    <div className='bg-blue-900 h-screen w-screen text-2xl text-cyan-50'>devesh</div>
-    
-  </>
-);
-
+const App = () => {
+  return ( 
+    <>
+      <div>
+        <Page1 />
+        <Page2 />
+      </div>
+    </>
+   );
 }
-
-export default App
+ 
+export default App;

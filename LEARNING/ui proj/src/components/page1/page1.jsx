@@ -1,13 +1,16 @@
 import React from 'react'
+import Nav from './nav.jsx'
+import Details from './details.jsx';
+import Leftcont from './leftcont.jsx';
 
-const page1 = () => {
+const Page1 = () => {
     return ( 
         <>
-        <div className='bg-blue-900 h-screen w-screen'>box1</div>
-        <div className='bg-black h-scree w-screen'>DEvESH</div>
-
+            <Nav/>
+            <Details / >
+            
         </>
-     );
+     )
 }
  
-export default page1;
+export default Page1;
