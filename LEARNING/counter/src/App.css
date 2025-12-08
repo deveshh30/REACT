@@ -1,0 +1,46 @@
+.container{
+  display: flexbox;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  background-color: #393939;
+}
+
+.val{
+  background: beige;
+  padding: 80px;
+  font-size: 60px;
+  border-radius: 30px;
+  border: none;
+}
+
+.add{
+  background: red;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.remove{
+  background: green;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 30px;
+  font-size: 50px;
+  text-align: center;
+  margin-left: 20px;
+
+}
