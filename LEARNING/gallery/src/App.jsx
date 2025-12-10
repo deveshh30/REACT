@@ -24,10 +24,10 @@ function App() {
     printuserData = userData.map(function (elem,idx){
       return <div key={idx}>
         <a href={elem.url}>
-        <div className='h-40 w-44'>
-        <img className='h-full object-cover' src={elem.download_url} alt="" />
+        <div className='h-70 w-74 '>
+        <img className='rounded-xl h-full object-cover gap-4 p-5' src={elem.download_url} alt="" />
       </div>
-      <h2>{elem.author}</h2>
+      <h2 className='gap-4 p-5'>{elem.author}</h2>
       </a>
       </div>
     })
