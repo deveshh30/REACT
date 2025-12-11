@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: red;
+    border-radius: 40px;
+    width: 60%;
+    margin-left: 50px;
+}
