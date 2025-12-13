@@ -1,12 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Card from './Card'
 
 function Foreground() {
-  return (
-      <div className="h-screen w-full z-[3] fixed top-0 left-0">
-        <div className="w-60 h-75 rounded-[20px] bg-zinc-500"></div>
-      </div>
-    
-  )
+    const data = [
+        { description: "deveshh gupta devesh gupta devesh gupta deveshh gupta ", 
+          filesize: ".9mb", 
+          close: false, 
+          tag:{isOpen: true, tagTitle:"Download Now", tagColor:"green"},
+         },
+         { description: "deveshh gupta devesh gupta devesh gupta deveshh gupta ", 
+          filesize: ".9mb", 
+          close: false, 
+          tag:{isOpen: true, tagTitle:"Download Now", tagColor:"red"},
+         },
+         { description: "deveshh gupta devesh gupta devesh gupta deveshh gupta ", 
+          filesize: ".9mb", 
+          close: false, 
+          tag:{isOpen: true, tagTitle:"Download Now", tagColor:"sky"},
+         },
+    ];
+    useState()
+    return (
+        <div className="h-full w-full z-[3] gap-15 p-5 flex flex-wrap fixed top-0 left-0">
+            {data.map((item, index) => (
+                <Card data={item} />
+            ))}
+            
+            
+            
+
+        </div>
+
+    )
 }
 
 export default Foreground
