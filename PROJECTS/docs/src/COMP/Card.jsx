@@ -2,11 +2,11 @@ import React from "react";
 import { FaFileAlt } from "react-icons/fa";
 import { IoMdCloudDownload } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
-import { motion, scale } from "motion/react"
+import { motion as Motion } from "motion/react"
 
-function Card({data} ) {
+function Card({data, constraintsRef} ) {
   return (
-    <motion.div drag whileDrag={{scale:1.2}} dragElastic={0.2} dragTransition={{bounceDamping:10 , bounceStiffness:600}} className="relative flex shrink-0 w-60 h-80 rounded-[40px] bg-zinc-500 text-white py-10 px-5 overflow-hidden">
+    <Motion.div drag dragConstraints={constraintsRef} whileDrag={{scale:1.2}} dragElastic={0.2} dragTransition={{bounceDamping:10 , bounceStiffness:600}} className="relative flex shrink-0 w-60 h-80 rounded-[40px] bg-zinc-500 text-white py-10 px-5 overflow-hidden">
       
       <FaFileAlt size={25} />
 
@@ -31,7 +31,7 @@ function Card({data} ) {
         </div>)}
 
       </div>
-    </motion.div>
+    </Motion.div>
   );
 }
 

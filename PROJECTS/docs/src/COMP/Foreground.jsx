@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import Card from './Card'
 
 function Foreground() {
 
-
+    
     const data = [
         { description: "deveshh gupta devesh gupta devesh gupta deveshh gupta ", 
           filesize: ".9mb", 
@@ -21,11 +21,11 @@ function Foreground() {
           tag:{isOpen: false, tagTitle:"Download Now", tagColor:"green"},
          },
     ];
-    useState()
+    const constraintsRef = useRef(null)
     return (
-        <div className="h-full w-full z-[3] gap-15 p-5 flex flex-wrap fixed top-0 left-0">
+        <div ref={constraintsRef} className="fixed inset-0 z-[3] gap-15 p-5 flex flex-wrap overflow-visible">
             {data.map((item, index) => (
-                <Card data={item}  />
+                <Card key={index} data={item} constraintsRef={constraintsRef} />
             ))}
             
             
