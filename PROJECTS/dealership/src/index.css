@@ -3,6 +3,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
-  font-family: Outfit;
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("./fonts/FoundersGrotesk-Semibold.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./fonts/NeueMontreal-Regular.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+

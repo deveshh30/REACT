@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-zinc-800 h-screen w-full">
+    <div className="h-screen w-full">
         <Navbar/>
         <LandingPage/>
     </div>
