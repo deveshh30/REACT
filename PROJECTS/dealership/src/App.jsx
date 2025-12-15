@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
 import Thrill from './components/thrill'
 import About from './components/About'
+import Eyes from './components/Eyes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <LandingPage/>
         <Thrill/>
         <About/>
+        <Eyes/>
     </div>
     </>
   )
