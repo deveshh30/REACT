@@ -3,7 +3,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 function LandingPage() {
   return (
-    <div className="bg-zinc-800 w-full h-screen border-2 text-red-100">
+    <div className="bg-zinc-800 w-full h-screen border-t-2 border-y-zinc-800 text-red-100">
       <div className="textleft mt-52 px-10">
         {["We Deliver", "Luxurious and Rare", "Supercars."].map((item, index) => (
           <div

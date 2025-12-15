@@ -4,15 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import LandingPage from './components/LandingPage'
+import Thrill from './components/thrill'
+import About from './components/About'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className="h-screen w-full">
+    <div className="
+     w-full min-h-screen bg-zinc-800">
         <Navbar/>
         <LandingPage/>
+        <Thrill/>
+        <About/>
     </div>
     </>
   )
