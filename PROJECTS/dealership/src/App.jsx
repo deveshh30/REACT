@@ -10,10 +10,12 @@ import Eyes from './components/Eyes'
 import Products from './components/Products'
 import Cards from './components/Cards'
 import Footer from './components/Footer'
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
     <div className="

@@ -22,8 +22,8 @@ function Eyes() {
   }, []);
 
   return (
-    <div className="w-full h-screen eyes">
-      <div className="bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')] bg-cover relative h-full w-full bg-center">
+    <div className="w-full h-screen eyes overflow-hidden">
+      <div data-scroll data-scroll-speed="-.7" className="bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')] bg-cover relative h-full w-full bg-center">
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 
           {[1, 2].map((_, i) => (
