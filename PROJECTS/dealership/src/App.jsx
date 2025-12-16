@@ -7,6 +7,7 @@ import LandingPage from './components/LandingPage'
 import Thrill from './components/thrill'
 import About from './components/About'
 import Eyes from './components/Eyes'
+import Products from './components/Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Thrill/>
         <About/>
         <Eyes/>
+        <Products/>
     </div>
     </>
   )
