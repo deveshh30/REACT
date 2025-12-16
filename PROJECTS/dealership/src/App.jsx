@@ -8,6 +8,8 @@ import Thrill from './components/thrill'
 import About from './components/About'
 import Eyes from './components/Eyes'
 import Products from './components/Products'
+import Cards from './components/Cards'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,8 @@ function App() {
         <About/>
         <Eyes/>
         <Products/>
+        <Cards/>
+        <Footer/>
     </div>
     </>
   )
