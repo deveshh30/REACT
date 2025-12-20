@@ -1,5 +1,8 @@
 import React from 'react'
 
+
+
+
 function Navbar() {
   return (
     <div className='fixed z-[999] w-full text-gray-50 px-20 py-8 flex items-center justify-between font-["Neue Montreal"]'>

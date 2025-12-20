@@ -9,17 +9,17 @@ import { FaArrowUpLong } from "react-icons/fa6";
 function LandingPage() {
   
   return (
-    <div data-scroll data-scroll-speed="-0.3"  className="bg-zinc-800 w-full h-screen border-t-2 border-y-zinc-800 text-red-100">
-      <div className="textleft mt-52 px-10">
+    <div data-scroll data-scroll-speed="-0.3"  className="bg-zinc-800 w-full h-screen border-t-2 border-y-zinc-800 text-white">
+      <div className="textleft mt-52 px-10 text-white">
         {["We Deliver", "Luxurious and Rare", "Supercars."].map((item, index) => (
           <div
             key={index}
-            className="masker uppercase font-[Founders_Grotesk] w-fit overflow-hidden flex items-center font-semibold"
+            className="masker uppercase font-[Founders_Grotesk] w-fit overflow-hidden flex items-center font-semibold text-white"
           >
             {index === 1 && (<motion.div initial={{width:0}} animate={{width:"8vw"}} transition={{ease:[0.76, 0, 0.24, 1], duration:2}} className="w-[8vw] mr-[1vw] rounded-xl relative top-[0.5vw] bg-red-500 h-[5vw]"></motion.div>
 
             )}
-            <h1 className="text-[8vw] leading-[6vw] h-full text-black">
+            <h1 className="text-[8vw] leading-[6vw] h-full text-white">
               {item}
             </h1>
           </div>
