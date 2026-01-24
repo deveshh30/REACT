@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 *{
-  background-color: #111;
-  font-family: Rubik;
+  
+  font-family:Rubik;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
