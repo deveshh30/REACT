@@ -1,16 +1,25 @@
 
-.poits { 
-    margin: 80px auto;
-    padding: 0 80px;
+.poits {
+    margin: 40px auto;
+    padding: 0 20px;
     position: relative;
 }
+
+@media (min-width: 768px) {
+    .poits {
+        margin: 80px auto;
+        padding: 0 80px;
+    }
+}
+
 .next-btn {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-50%);
-    padding: 15px;
-    width: 50px;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     background: #212EA0;
@@ -22,16 +31,33 @@
 .back-btn {
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 10px;
     transform: translateY(-50%);
-    padding: 15px;
-    width: 50px;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     background: #212EA0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .next-btn {
+        right: 20px;
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .back-btn {
+        left: 20px;
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .next-btn img, .back-btn img {

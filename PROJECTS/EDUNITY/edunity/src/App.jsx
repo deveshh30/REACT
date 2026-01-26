@@ -16,7 +16,7 @@ function App() {
     <div className="no-scrollbar">
     <Navbar/>
     <Hero/>
-    <div className="text-black text-2xl">
+    <div className="text-black text-xl md:text-2xl">
     <Title subTitle='Our Program' title= 'What we OFFER' />
     <Programs/>
     <About/> 
